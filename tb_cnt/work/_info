@@ -1,0 +1,92 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter
+Etb_cnt
+Z0 w1704193960
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dC:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/tb_cnt
+Z5 8C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/tb_cnt/tb_cnt.vhd
+Z6 FC:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/tb_cnt/tb_cnt.vhd
+l0
+L5
+V_Cf9lRCAzEk_7:7;fX]cN3
+!s100 RUKVaH5KR2]F9:i]JY4ce1
+Z7 OV;C;10.5b;63
+32
+Z8 !s110 1704194208
+!i10b 1
+Z9 !s108 1704194208.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/tb_cnt/tb_cnt.vhd|
+Z11 !s107 C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/tb_cnt/tb_cnt.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Abehavior
+R1
+R2
+R3
+DEx4 work 6 tb_cnt 0 22 _Cf9lRCAzEk_7:7;fX]cN3
+l23
+L8
+Vl`=0mj9YRY5iC8Hm5[YR13
+!s100 W;zG`Sj=cj6>15:NEj0660
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Eud_counter
+Z14 w1703955180
+R1
+R2
+R3
+R4
+Z15 8C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/tb_cnt/UD_counter.vhd
+Z16 FC:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/tb_cnt/UD_counter.vhd
+l0
+L5
+V=YnUC5O@g;^n5d?_NB48L1
+!s100 GUkPld7J9]NWkETH3zhWJ3
+R7
+32
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/tb_cnt/UD_counter.vhd|
+Z18 !s107 C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/tb_cnt/UD_counter.vhd|
+!i113 1
+R12
+R13
+Abehavior
+R1
+R2
+R3
+DEx4 work 10 ud_counter 0 22 =YnUC5O@g;^n5d?_NB48L1
+l15
+L14
+V?PFhbff7<H@`eT2]ERaP=1
+!s100 i0LOn@17BRHlnNf>QN5<c3
+R7
+32
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
