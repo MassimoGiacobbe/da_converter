@@ -1,0 +1,31 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity accumulation_register is
+GENERIC(K : integer :=8)
+PORT( input_val : in std_logic;
+		clock,rstn : in std_logic;
+		output_val : out std_logic_vector(K-1 downto 0));
+end accumulation_register;
+
+architecture behavior of accumulation_register is 
+
+signal stored_val : unsigned(K-1 downto 0);
+
+begin
+
+process(clock,rstn)
+
+begin
+
+if(rstn='0') then --asynchronous reset
+stored_val<=(others => '0');
+elsif(rising_edge(clock) and rstn='1') then
+
+stored_val+=unsigned(input_val);
+output_val<=std_logic_vector(stored_val);
+end if;
+end process;
+
+end behavior;

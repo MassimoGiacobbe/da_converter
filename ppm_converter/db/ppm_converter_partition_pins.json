@@ -1,0 +1,53 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "bit_o",
+					"strict" : false
+				},
+				{
+					"name" : "CLOCK_50",
+					"strict" : false
+				},
+				{
+					"name" : "RSTn",
+					"strict" : false
+				},
+				{
+					"name" : "i_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "i_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "i_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "i_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "i_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "i_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "i_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "i_data[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
