@@ -4,83 +4,7 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "test_out_N_cnt[0]",
-					"strict" : false
-				},
-				{
-					"name" : "test_out_N_cnt[1]",
-					"strict" : false
-				},
-				{
-					"name" : "test_out_N_cnt[2]",
-					"strict" : false
-				},
-				{
-					"name" : "test_out_N_cnt[3]",
-					"strict" : false
-				},
-				{
-					"name" : "test_out_N_cnt[4]",
-					"strict" : false
-				},
-				{
-					"name" : "test_out_N_cnt[5]",
-					"strict" : false
-				},
-				{
-					"name" : "test_out_N_cnt[6]",
-					"strict" : false
-				},
-				{
-					"name" : "test_out_N_cnt[7]",
-					"strict" : false
-				},
-				{
-					"name" : "test_out_D_cnt[0]",
-					"strict" : false
-				},
-				{
-					"name" : "test_out_D_cnt[1]",
-					"strict" : false
-				},
-				{
-					"name" : "test_out_D_cnt[2]",
-					"strict" : false
-				},
-				{
-					"name" : "test_out_D_cnt[3]",
-					"strict" : false
-				},
-				{
-					"name" : "test_out_D_cnt[4]",
-					"strict" : false
-				},
-				{
-					"name" : "test_out_D_cnt[5]",
-					"strict" : false
-				},
-				{
-					"name" : "test_out_D_cnt[6]",
-					"strict" : false
-				},
-				{
-					"name" : "test_out_D_cnt[7]",
-					"strict" : false
-				},
-				{
 					"name" : "OUTPUT_VAL",
-					"strict" : false
-				},
-				{
-					"name" : "test_tc1",
-					"strict" : false
-				},
-				{
-					"name" : "test_tc2",
-					"strict" : false
-				},
-				{
-					"name" : "test_D_en",
 					"strict" : false
 				},
 				{
@@ -89,26 +13,6 @@
 				},
 				{
 					"name" : "A_RSTn",
-					"strict" : false
-				},
-				{
-					"name" : "INPUT_VAL[0]",
-					"strict" : false
-				},
-				{
-					"name" : "INPUT_VAL[1]",
-					"strict" : false
-				},
-				{
-					"name" : "INPUT_VAL[2]",
-					"strict" : false
-				},
-				{
-					"name" : "INPUT_VAL[3]",
-					"strict" : false
-				},
-				{
-					"name" : "INPUT_VAL[4]",
 					"strict" : false
 				},
 				{
@@ -121,6 +25,34 @@
 				},
 				{
 					"name" : "INPUT_VAL[7]",
+					"strict" : false
+				},
+				{
+					"name" : "INPUT_VAL[4]",
+					"strict" : false
+				},
+				{
+					"name" : "INPUT_VAL[3]",
+					"strict" : false
+				},
+				{
+					"name" : "INPUT_VAL[2]",
+					"strict" : false
+				},
+				{
+					"name" : "INPUT_VAL[1]",
+					"strict" : false
+				},
+				{
+					"name" : "INPUT_VAL[0]",
+					"strict" : false
+				},
+				{
+					"name" : "freq[0]",
+					"strict" : false
+				},
+				{
+					"name" : "freq[1]",
 					"strict" : false
 				}
 			]

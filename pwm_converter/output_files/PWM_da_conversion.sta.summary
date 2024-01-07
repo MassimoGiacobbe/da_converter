@@ -2,100 +2,180 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
+Type  : Slow 1100mV 85C Model Setup 'clk_generator:clk_generation|tmp_clk'
+Slack : -5.352
+TNS   : -64.019
+
 Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
-Slack : -3.489
-TNS   : -40.347
+Slack : -4.207
+TNS   : -39.273
 
 Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
-Slack : 0.504
+Slack : -1.338
+TNS   : -3.850
+
+Type  : Slow 1100mV 85C Model Hold 'clk_generator:clk_generation|tmp_clk'
+Slack : 0.888
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Recovery 'CLOCK_50'
-Slack : -2.569
-TNS   : -51.080
+Slack : -3.165
+TNS   : -27.697
+
+Type  : Slow 1100mV 85C Model Recovery 'clk_generator:clk_generation|tmp_clk'
+Slack : -2.222
+TNS   : -36.871
 
 Type  : Slow 1100mV 85C Model Removal 'CLOCK_50'
-Slack : 0.886
+Slack : 0.817
 TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'clk_generator:clk_generation|tmp_clk'
+Slack : 1.076
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk_generator:clk_generation|tmp_clk'
+Slack : -0.394
+TNS   : -9.631
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -0.394
-TNS   : -11.014
+TNS   : -6.398
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'A_RSTn'
-Slack : 0.108
+Slack : 0.271
 TNS   : 0.000
 
+Type  : Slow 1100mV 0C Model Setup 'clk_generator:clk_generation|tmp_clk'
+Slack : -5.319
+TNS   : -63.751
+
 Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
-Slack : -3.483
-TNS   : -40.834
+Slack : -4.335
+TNS   : -38.509
 
 Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
-Slack : 0.242
+Slack : -1.420
+TNS   : -4.336
+
+Type  : Slow 1100mV 0C Model Hold 'clk_generator:clk_generation|tmp_clk'
+Slack : 0.890
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Recovery 'CLOCK_50'
-Slack : -2.269
-TNS   : -45.067
+Slack : -3.102
+TNS   : -25.051
+
+Type  : Slow 1100mV 0C Model Recovery 'clk_generator:clk_generation|tmp_clk'
+Slack : -2.243
+TNS   : -37.378
 
 Type  : Slow 1100mV 0C Model Removal 'CLOCK_50'
-Slack : 0.551
+Slack : 0.553
 TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'clk_generator:clk_generation|tmp_clk'
+Slack : 1.155
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk_generator:clk_generation|tmp_clk'
+Slack : -0.394
+TNS   : -9.519
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -0.394
-TNS   : -11.956
+TNS   : -6.928
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'A_RSTn'
-Slack : 0.146
+Slack : 0.272
 TNS   : 0.000
 
+Type  : Fast 1100mV 85C Model Setup 'clk_generator:clk_generation|tmp_clk'
+Slack : -3.382
+TNS   : -36.499
+
 Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
-Slack : -2.209
-TNS   : -19.996
+Slack : -2.723
+TNS   : -26.073
 
 Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
-Slack : 0.166
+Slack : -0.837
+TNS   : -2.532
+
+Type  : Fast 1100mV 85C Model Hold 'clk_generator:clk_generation|tmp_clk'
+Slack : 0.413
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Recovery 'CLOCK_50'
-Slack : -1.935
-TNS   : -38.591
+Slack : -2.444
+TNS   : -22.325
+
+Type  : Fast 1100mV 85C Model Recovery 'clk_generator:clk_generation|tmp_clk'
+Slack : -1.492
+TNS   : -24.659
+
+Type  : Fast 1100mV 85C Model Removal 'clk_generator:clk_generation|tmp_clk'
+Slack : 0.405
+TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Removal 'CLOCK_50'
-Slack : 0.516
+Slack : 0.530
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
-Slack : -0.080
-TNS   : -1.624
+Slack : -0.277
+TNS   : -1.122
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'A_RSTn'
-Slack : -0.065
-TNS   : -0.545
+Slack : 0.005
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk_generator:clk_generation|tmp_clk'
+Slack : 0.081
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'clk_generator:clk_generation|tmp_clk'
+Slack : -3.218
+TNS   : -34.028
 
 Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
-Slack : -1.944
-TNS   : -17.369
+Slack : -2.551
+TNS   : -23.741
 
 Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
-Slack : 0.087
+Slack : -0.937
+TNS   : -2.800
+
+Type  : Fast 1100mV 0C Model Hold 'clk_generator:clk_generation|tmp_clk'
+Slack : 0.383
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Recovery 'CLOCK_50'
-Slack : -1.644
-TNS   : -32.757
+Slack : -2.208
+TNS   : -19.287
+
+Type  : Fast 1100mV 0C Model Recovery 'clk_generator:clk_generation|tmp_clk'
+Slack : -1.499
+TNS   : -25.030
 
 Type  : Fast 1100mV 0C Model Removal 'CLOCK_50'
-Slack : 0.295
+Slack : 0.330
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'clk_generator:clk_generation|tmp_clk'
+Slack : 0.452
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
-Slack : -0.078
-TNS   : -1.620
+Slack : -0.283
+TNS   : -1.134
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'A_RSTn'
-Slack : -0.059
-TNS   : -0.480
+Slack : 0.005
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk_generator:clk_generation|tmp_clk'
+Slack : 0.098
+TNS   : 0.000
 
 ------------------------------------------------------------
