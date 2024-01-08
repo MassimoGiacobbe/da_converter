@@ -8,11 +8,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "CLOCK_50",
+					"name" : "RSTn",
 					"strict" : false
 				},
 				{
-					"name" : "RSTn",
+					"name" : "CLOCK_50",
 					"strict" : false
 				},
 				{
@@ -45,6 +45,14 @@
 				},
 				{
 					"name" : "i_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "freq[0]",
+					"strict" : false
+				},
+				{
+					"name" : "freq[1]",
 					"strict" : false
 				}
 			]

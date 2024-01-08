@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ppm_converter
-Thu Jan 04 16:27:04 2024
+Mon Jan 08 17:59:51 2024
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -13,13 +13,17 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: Top-level Entity: |ppm_converter
- 10. Parameter Settings for User Entity Instance: accumulation_register:integ
- 11. Port Connectivity Checks: "accumulation_register:integ"
- 12. Post-Synthesis Netlist Statistics for Top Partition
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Inverted Register Statistics
+ 11. Parameter Settings for User Entity Instance: Top-level Entity: |ppm_converter
+ 12. Parameter Settings for User Entity Instance: clk_generator:freq_gen|UD_counter:counter
+ 13. Parameter Settings for User Entity Instance: accumulation_register:integ
+ 14. Port Connectivity Checks: "accumulation_register:integ"
+ 15. Port Connectivity Checks: "clk_generator:freq_gen|UD_counter:counter"
+ 16. Post-Synthesis Netlist Statistics for Top Partition
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
 
 
 
@@ -46,14 +50,14 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Jan 04 16:27:04 2024       ;
+; Analysis & Synthesis Status     ; Successful - Mon Jan 08 17:59:51 2024       ;
 ; Quartus Prime Version           ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                   ; ppm_converter                               ;
 ; Top-level Entity Name           ; ppm_converter                               ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 11                                          ;
-; Total pins                      ; 11                                          ;
+; Total registers                 ; 22                                          ;
+; Total pins                      ; 13                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -170,52 +174,66 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                            ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                                                     ; Library ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; accumulation_register.vhd        ; yes             ; User VHDL File  ; C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/ppm_converter/accumulation_register.vhd ;         ;
-; ppm_converter.vhd                ; yes             ; User VHDL File  ; C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/ppm_converter/ppm_converter.vhd         ;         ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                              ;
++------------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path   ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                                                     ; Library ;
++------------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; ../pwm_converter/UD_counter.vhd    ; yes             ; User VHDL File  ; C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/pwm_converter/UD_counter.vhd            ;         ;
+; ../pwm_converter/clk_generator.vhd ; yes             ; User VHDL File  ; C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/pwm_converter/clk_generator.vhd         ;         ;
+; accumulation_register.vhd          ; yes             ; User VHDL File  ; C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/ppm_converter/accumulation_register.vhd ;         ;
+; ppm_converter.vhd                  ; yes             ; User VHDL File  ; C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/ppm_converter/ppm_converter.vhd         ;         ;
++------------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                  ;
-+---------------------------------------------+----------------+
-; Resource                                    ; Usage          ;
-+---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 14             ;
-;                                             ;                ;
-; Combinational ALUT usage for logic          ; 26             ;
-;     -- 7 input functions                    ; 0              ;
-;     -- 6 input functions                    ; 1              ;
-;     -- 5 input functions                    ; 1              ;
-;     -- 4 input functions                    ; 6              ;
-;     -- <=3 input functions                  ; 18             ;
-;                                             ;                ;
-; Dedicated logic registers                   ; 11             ;
-;                                             ;                ;
-; I/O pins                                    ; 11             ;
-;                                             ;                ;
-; Total DSP Blocks                            ; 0              ;
-;                                             ;                ;
-; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 11             ;
-; Total fan-out                               ; 135            ;
-; Average fan-out                             ; 2.29           ;
-+---------------------------------------------+----------------+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Estimate of Logic utilization (ALMs needed) ; 34         ;
+;                                             ;            ;
+; Combinational ALUT usage for logic          ; 64         ;
+;     -- 7 input functions                    ; 0          ;
+;     -- 6 input functions                    ; 3          ;
+;     -- 5 input functions                    ; 5          ;
+;     -- 4 input functions                    ; 7          ;
+;     -- <=3 input functions                  ; 49         ;
+;                                             ;            ;
+; Dedicated logic registers                   ; 22         ;
+;                                             ;            ;
+; I/O pins                                    ; 13         ;
+;                                             ;            ;
+; Total DSP Blocks                            ; 0          ;
+;                                             ;            ;
+; Maximum fan-out node                        ; RSTn~input ;
+; Maximum fan-out                             ; 36         ;
+; Total fan-out                               ; 274        ;
+; Average fan-out                             ; 2.45       ;
++---------------------------------------------+------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                           ;
-+----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------+-----------------------+--------------+
-; Compilation Hierarchy Node       ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                        ; Entity Name           ; Library Name ;
-+----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------+-----------------------+--------------+
-; |ppm_converter                   ; 26 (8)              ; 11 (0)                    ; 0                 ; 0          ; 11   ; 0            ; |ppm_converter                             ; ppm_converter         ; work         ;
-;    |accumulation_register:integ| ; 18 (18)             ; 11 (11)                   ; 0                 ; 0          ; 0    ; 0            ; |ppm_converter|accumulation_register:integ ; accumulation_register ; work         ;
-+----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------+-----------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                         ;
++----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------+-----------------------+--------------+
+; Compilation Hierarchy Node       ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                      ; Entity Name           ; Library Name ;
++----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------+-----------------------+--------------+
+; |ppm_converter                   ; 64 (8)              ; 22 (0)                    ; 0                 ; 0          ; 13   ; 0            ; |ppm_converter                                           ; ppm_converter         ; work         ;
+;    |accumulation_register:integ| ; 16 (16)             ; 11 (11)                   ; 0                 ; 0          ; 0    ; 0            ; |ppm_converter|accumulation_register:integ               ; accumulation_register ; work         ;
+;    |clk_generator:freq_gen|      ; 40 (7)              ; 11 (1)                    ; 0                 ; 0          ; 0    ; 0            ; |ppm_converter|clk_generator:freq_gen                    ; clk_generator         ; work         ;
+;       |UD_counter:counter|       ; 33 (33)             ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |ppm_converter|clk_generator:freq_gen|UD_counter:counter ; UD_counter            ; work         ;
++----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------+-----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------+
+; Registers Removed During Synthesis                         ;
++---------------------------------------+--------------------+
+; Register name                         ; Reason for Removal ;
++---------------------------------------+--------------------+
+; clk_generator:freq_gen|clear_cnt      ; Lost fanout        ;
+; Total Number of Removed Registers = 1 ;                    ;
++---------------------------------------+--------------------+
 
 
 +------------------------------------------------------+
@@ -223,14 +241,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 11    ;
+; Total registers                              ; 22    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 11    ;
+; Number of registers using Asynchronous Clear ; 22    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 10    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++---------------------------------------------------------------+
+; Inverted Register Statistics                                  ;
++-----------------------------------------------------+---------+
+; Inverted Register                                   ; Fan out ;
++-----------------------------------------------------+---------+
+; clk_generator:freq_gen|UD_counter:counter|OVALUE[5] ; 2       ;
+; clk_generator:freq_gen|UD_counter:counter|OVALUE[4] ; 2       ;
+; Total number of inverted registers = 2              ;         ;
++-----------------------------------------------------+---------+
 
 
 +-------------------------------------------------------------------------------+
@@ -240,6 +269,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+-------+------------------------------------------------------+
 ; N              ; 8     ; Signed Integer                                       ;
 +----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: clk_generator:freq_gen|UD_counter:counter ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -263,28 +302,44 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
++-----------------------------------------------------------------------+
+; Port Connectivity Checks: "clk_generator:freq_gen|UD_counter:counter" ;
++----------------+-------+----------+-----------------------------------+
+; Port           ; Type  ; Severity ; Details                           ;
++----------------+-------+----------+-----------------------------------+
+; en             ; Input ; Info     ; Stuck at VCC                      ;
+; udn            ; Input ; Info     ; Stuck at GND                      ;
+; init_val[5..4] ; Input ; Info     ; Stuck at VCC                      ;
+; init_val[9]    ; Input ; Info     ; Stuck at GND                      ;
++----------------+-------+----------+-----------------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 11                          ;
-;     CLR               ; 1                           ;
+; arriav_ff             ; 22                          ;
+;     CLR               ; 12                          ;
 ;     ENA CLR           ; 10                          ;
-; arriav_lcell_comb     ; 26                          ;
-;     arith             ; 10                          ;
+; arriav_lcell_comb     ; 64                          ;
+;     arith             ; 20                          ;
+;         1 data inputs ; 10                          ;
 ;         2 data inputs ; 10                          ;
-;     normal            ; 8                           ;
-;         4 data inputs ; 6                           ;
-;         5 data inputs ; 1                           ;
-;         6 data inputs ; 1                           ;
+;     normal            ; 36                          ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 10                          ;
+;         3 data inputs ; 9                           ;
+;         4 data inputs ; 7                           ;
+;         5 data inputs ; 5                           ;
+;         6 data inputs ; 3                           ;
 ;     shared            ; 8                           ;
 ;         1 data inputs ; 7                           ;
 ;         2 data inputs ; 1                           ;
-; boundary_port         ; 11                          ;
+; boundary_port         ; 13                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.40                        ;
-; Average LUT depth     ; 2.81                        ;
+; Max LUT depth         ; 5.60                        ;
+; Average LUT depth     ; 3.44                        ;
 +-----------------------+-----------------------------+
 
 
@@ -303,29 +358,49 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Thu Jan 04 16:26:57 2024
+    Info: Processing started: Mon Jan 08 17:59:42 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ppm_converter -c ppm_converter
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file /users/maxgi/dropbox (politecnico di torino studenti)/uni/magistrale/de/lab6/da_converter/da_converter/pwm_converter/ud_counter.vhd
+    Info (12022): Found design unit 1: UD_counter-behavior File: C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/pwm_converter/UD_counter.vhd Line: 14
+    Info (12023): Found entity 1: UD_counter File: C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/pwm_converter/UD_counter.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /users/maxgi/dropbox (politecnico di torino studenti)/uni/magistrale/de/lab6/da_converter/da_converter/pwm_converter/clk_generator.vhd
+    Info (12022): Found design unit 1: clk_generator-behavior File: C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/pwm_converter/clk_generator.vhd Line: 11
+    Info (12023): Found entity 1: clk_generator File: C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/pwm_converter/clk_generator.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file accumulation_register.vhd
     Info (12022): Found design unit 1: accumulation_register-behavior File: C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/ppm_converter/accumulation_register.vhd Line: 13
     Info (12023): Found entity 1: accumulation_register File: C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/ppm_converter/accumulation_register.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file ppm_converter.vhd
-    Info (12022): Found design unit 1: ppm_converter-behavior File: C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/ppm_converter/ppm_converter.vhd Line: 14
+    Info (12022): Found design unit 1: ppm_converter-behavior File: C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/ppm_converter/ppm_converter.vhd Line: 15
     Info (12023): Found entity 1: ppm_converter File: C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/ppm_converter/ppm_converter.vhd Line: 6
 Info (12127): Elaborating entity "ppm_converter" for the top level hierarchy
-Info (12128): Elaborating entity "accumulation_register" for hierarchy "accumulation_register:integ" File: C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/ppm_converter/ppm_converter.vhd Line: 29
+Info (12128): Elaborating entity "clk_generator" for hierarchy "clk_generator:freq_gen" File: C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/ppm_converter/ppm_converter.vhd Line: 37
+Info (12128): Elaborating entity "UD_counter" for hierarchy "clk_generator:freq_gen|UD_counter:counter" File: C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/pwm_converter/clk_generator.vhd Line: 27
+Warning (10492): VHDL Process Statement warning at UD_counter.vhd(20): signal "INIT_VAL" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/pwm_converter/UD_counter.vhd Line: 20
+Info (12128): Elaborating entity "accumulation_register" for hierarchy "accumulation_register:integ" File: C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/ppm_converter/ppm_converter.vhd Line: 39
+Info (13000): Registers with preset signals will power-up high File: C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/pwm_converter/UD_counter.vhd Line: 19
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
+    Warning (13310): Register "clk_generator:freq_gen|UD_counter:counter|OVALUE[3]" is converted into an equivalent circuit using register "clk_generator:freq_gen|UD_counter:counter|OVALUE[3]~_emulated" and latch "clk_generator:freq_gen|UD_counter:counter|OVALUE[3]~1" File: C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/pwm_converter/UD_counter.vhd Line: 19
+    Warning (13310): Register "clk_generator:freq_gen|UD_counter:counter|OVALUE[2]" is converted into an equivalent circuit using register "clk_generator:freq_gen|UD_counter:counter|OVALUE[2]~_emulated" and latch "clk_generator:freq_gen|UD_counter:counter|OVALUE[2]~5" File: C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/pwm_converter/UD_counter.vhd Line: 19
+    Warning (13310): Register "clk_generator:freq_gen|UD_counter:counter|OVALUE[1]" is converted into an equivalent circuit using register "clk_generator:freq_gen|UD_counter:counter|OVALUE[1]~_emulated" and latch "clk_generator:freq_gen|UD_counter:counter|OVALUE[1]~9" File: C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/pwm_converter/UD_counter.vhd Line: 19
+    Warning (13310): Register "clk_generator:freq_gen|UD_counter:counter|OVALUE[0]" is converted into an equivalent circuit using register "clk_generator:freq_gen|UD_counter:counter|OVALUE[0]~_emulated" and latch "clk_generator:freq_gen|UD_counter:counter|OVALUE[0]~13" File: C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/pwm_converter/UD_counter.vhd Line: 19
+    Warning (13310): Register "clk_generator:freq_gen|UD_counter:counter|OVALUE[6]" is converted into an equivalent circuit using register "clk_generator:freq_gen|UD_counter:counter|OVALUE[6]~_emulated" and latch "clk_generator:freq_gen|UD_counter:counter|OVALUE[6]~17" File: C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/pwm_converter/UD_counter.vhd Line: 19
+    Warning (13310): Register "clk_generator:freq_gen|UD_counter:counter|OVALUE[7]" is converted into an equivalent circuit using register "clk_generator:freq_gen|UD_counter:counter|OVALUE[7]~_emulated" and latch "clk_generator:freq_gen|UD_counter:counter|OVALUE[7]~21" File: C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/pwm_converter/UD_counter.vhd Line: 19
+    Warning (13310): Register "clk_generator:freq_gen|UD_counter:counter|OVALUE[8]" is converted into an equivalent circuit using register "clk_generator:freq_gen|UD_counter:counter|OVALUE[8]~_emulated" and latch "clk_generator:freq_gen|UD_counter:counter|OVALUE[8]~25" File: C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/pwm_converter/UD_counter.vhd Line: 19
 Info (286030): Timing-Driven Synthesis is running
+Info (17049): 1 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 38 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 10 input pins
+Info (21057): Implemented 78 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 12 input pins
     Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 27 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4891 megabytes
-    Info: Processing ended: Thu Jan 04 16:27:04 2024
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:04
+    Info (21061): Implemented 65 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 4890 megabytes
+    Info: Processing ended: Mon Jan 08 17:59:51 2024
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:02
 
 
