@@ -1,0 +1,54 @@
+{C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/tb_ppm2/ppm_converter.vhd} {2 {vcom -work work -2002 -explicit -stats=none {C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/tb_ppm2/ppm_converter.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Compiling entity ppm_converter
+-- Compiling architecture behavior of ppm_converter
+** Warning: (vcom-31) Unable to unlink file "C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/tb_ppm2/work/_lock".
+Permission denied. (errno = EACCES)
+
+} {} {}} {C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/tb_ppm2/clk_generator.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/tb_ppm2/clk_generator.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity clk_generator
+-- Compiling architecture behavior of clk_generator
+
+} {} {}} {C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/tb_ppm2/UD_counter.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\maxgi\Dropbox (Politecnico Di Torino Studenti)\uni\magistrale\de\lab6\da_converter\da_converter\tb_ppm2\UD_counter.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity UD_counter
+-- Compiling architecture behavior of UD_counter
+
+} {} {}} {C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/tb_ppm2/accumulation_register.vhd} {2 {vcom -work work -2002 -explicit -stats=none {C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/tb_ppm2/accumulation_register.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+** Warning: (vcom-6) -- Waiting for lock by "maxgi@MSI, pid = 14364
+". Lockfile is "C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/tb_ppm2/work/_lock".
+** Warning: (vcom-6) -- Waiting for lock by "maxgi@MSI, pid = 14364
+". Lockfile is "C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/tb_ppm2/work/_lock".
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Compiling entity accumulation_register
+-- Compiling architecture behavior of accumulation_register
+
+} {} {}} {C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/tb_ppm2/tb_ppm.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\maxgi\Dropbox (Politecnico Di Torino Studenti)\uni\magistrale\de\lab6\da_converter\da_converter\tb_ppm2\tb_ppm.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity tb_ppm
+-- Compiling architecture behavior of tb_ppm
+
+} {} {}}

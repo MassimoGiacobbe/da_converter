@@ -5,6 +5,7 @@ use ieee.numeric_std.all;
  PORT(
  i_freq : in std_logic_vector(1 downto 0);
  clk, rstn : in std_logic;
+ test_clear : out std_logic;
  gen_clk : out std_logic);
  end clk_generator;
  
@@ -23,7 +24,9 @@ signal cnt_o : unsigned(9 downto 0);
 signal f_period: std_logic_vector(9 downto 0);
 signal clear_cnt,tmp_clk : std_logic;
 begin
-gen_clk<=tmp_clk;
+
+test_clear<=clear_cnt;
+
 counter : UD_counter
 GENERIC MAP(10)
 PORT MAP(rstn,clear_cnt,'1','0',clk,f_period,cnt_o);
@@ -31,8 +34,8 @@ PORT MAP(rstn,clear_cnt,'1','0',clk,f_period,cnt_o);
 period_process : process(i_freq)
 begin
 case i_freq is 
-when "00" =>f_period<="0000111111"; --400kHz
-when "01" =>f_period<="0001111101";--200kHz
+when "00" =>f_period<="0000000011"; --400kHz modified for simulation
+when "01" =>f_period<="0000000110";--200kHz
 when "10" =>f_period<="0011111010";--100kHz
 when "11" =>f_period<="0111110100";--50kHz
 when others => f_period<="0000111111";
@@ -55,5 +58,5 @@ elsif(rstn='1' AND rising_edge(clk)) then
 gen_clk<=tmp_clk;
 end if;
 end process;
-end behavior;
+end behavior;	
 	

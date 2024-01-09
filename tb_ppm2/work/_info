@@ -1,0 +1,219 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/tb_ppm2
+Eaccumulation_register
+Z1 w1704791370
+Z2 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
+Z3 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z6 8C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/tb_ppm2/accumulation_register.vhd
+Z7 FC:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/tb_ppm2/accumulation_register.vhd
+l0
+L6
+V=ULU]Wa0C@^`CeaPAHYmm2
+!s100 JhbMcN>HiJ6B8QKaF8W;S1
+Z8 OV;C;10.5b;63
+32
+Z9 !s110 1704791618
+!i10b 1
+Z10 !s108 1704791609.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/tb_ppm2/accumulation_register.vhd|
+Z12 !s107 C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/tb_ppm2/accumulation_register.vhd|
+!i113 1
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1 CvgOpt 0
+Abehavior
+R2
+R3
+R4
+R5
+DEx4 work 21 accumulation_register 0 22 =ULU]Wa0C@^`CeaPAHYmm2
+l18
+L13
+VW<=idc0gP?^8S2Uo3VIKW2
+!s100 :mFBR`l>kT_N1Uj]^f[Ya2
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Eclk_generator
+Z15 w1704790290
+R3
+R4
+R5
+R0
+Z16 8C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/tb_ppm2/clk_generator.vhd
+Z17 FC:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/tb_ppm2/clk_generator.vhd
+l0
+L4
+VC=?SM3:;G=Hob^g]nm9IE2
+!s100 iSNTZPF1E><XazmGX98ij3
+R8
+32
+R9
+!i10b 1
+Z18 !s108 1704791618.000000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/tb_ppm2/clk_generator.vhd|
+Z20 !s107 C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/tb_ppm2/clk_generator.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R3
+R4
+R5
+DEx4 work 13 clk_generator 0 22 C=?SM3:;G=Hob^g]nm9IE2
+l25
+L11
+Ve127Xe<H;5Ph8kS[MzB6T1
+!s100 ]Y6bkDTQ=V85`=hM__fWY2
+R8
+32
+R9
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R13
+R14
+Eppm_converter
+Z21 w1704789822
+R2
+R3
+R4
+R5
+R0
+Z22 8C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/tb_ppm2/ppm_converter.vhd
+Z23 FC:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/tb_ppm2/ppm_converter.vhd
+l0
+L6
+VTR:X[>5cL6H;n:?jnX>Gz3
+!s100 _zh;m_^khF0;W_`P]4=D12
+R8
+32
+R9
+!i10b 1
+R18
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/tb_ppm2/ppm_converter.vhd|
+Z25 !s107 C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/tb_ppm2/ppm_converter.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R2
+R3
+R4
+R5
+Z26 DEx4 work 13 ppm_converter 0 22 TR:X[>5cL6H;n:?jnX>Gz3
+l38
+L18
+Z27 VLhW]FXz^TTIga>N^MhkIG3
+Z28 !s100 zKOeQD5297c^i=2B5cYh63
+R8
+32
+R9
+!i10b 1
+R18
+R24
+R25
+!i113 1
+R13
+R14
+Etb_ppm
+Z29 w1704791233
+R3
+R4
+R5
+R0
+Z30 8C:\Users\maxgi\Dropbox (Politecnico Di Torino Studenti)\uni\magistrale\de\lab6\da_converter\da_converter\tb_ppm2\tb_ppm.vhd
+Z31 FC:\Users\maxgi\Dropbox (Politecnico Di Torino Studenti)\uni\magistrale\de\lab6\da_converter\da_converter\tb_ppm2\tb_ppm.vhd
+l0
+L6
+VN`^CcmT:Wn:W^ndG==5g>0
+!s100 GJIGzA^]Q6GK0DE^Y7I8k1
+R8
+32
+Z32 !s110 1704791446
+!i10b 1
+Z33 !s108 1704791446.000000
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\maxgi\Dropbox (Politecnico Di Torino Studenti)\uni\magistrale\de\lab6\da_converter\da_converter\tb_ppm2\tb_ppm.vhd|
+Z35 !s107 C:\Users\maxgi\Dropbox (Politecnico Di Torino Studenti)\uni\magistrale\de\lab6\da_converter\da_converter\tb_ppm2\tb_ppm.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R3
+R4
+R5
+DEx4 work 6 tb_ppm 0 22 N`^CcmT:Wn:W^ndG==5g>0
+l31
+L9
+VYAc17P2H;8Dd>8;BUg:ko1
+!s100 AN[;3o?cI3>[kUaCgSjP63
+R8
+32
+R32
+!i10b 1
+R33
+R34
+R35
+!i113 1
+R13
+R14
+Eud_counter
+Z36 w1704790486
+R3
+R4
+R5
+R0
+Z37 8C:\Users\maxgi\Dropbox (Politecnico Di Torino Studenti)\uni\magistrale\de\lab6\da_converter\da_converter\tb_ppm2\UD_counter.vhd
+Z38 FC:\Users\maxgi\Dropbox (Politecnico Di Torino Studenti)\uni\magistrale\de\lab6\da_converter\da_converter\tb_ppm2\UD_counter.vhd
+l0
+L5
+V=YnUC5O@g;^n5d?_NB48L1
+!s100 GUkPld7J9]NWkETH3zhWJ3
+R8
+32
+Z39 !s110 1704791237
+!i10b 1
+Z40 !s108 1704791237.000000
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\maxgi\Dropbox (Politecnico Di Torino Studenti)\uni\magistrale\de\lab6\da_converter\da_converter\tb_ppm2\UD_counter.vhd|
+Z42 !s107 C:\Users\maxgi\Dropbox (Politecnico Di Torino Studenti)\uni\magistrale\de\lab6\da_converter\da_converter\tb_ppm2\UD_counter.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R3
+R4
+R5
+DEx4 work 10 ud_counter 0 22 =YnUC5O@g;^n5d?_NB48L1
+l15
+L14
+VmV0:b6n9njg@=`0El[Lg:2
+!s100 TKOWdI97eA9j;WS;IM93B0
+R8
+32
+R39
+!i10b 1
+R40
+R41
+R42
+!i113 1
+R13
+R14
