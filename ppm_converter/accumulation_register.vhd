@@ -12,23 +12,27 @@ end accumulation_register;
 
 architecture behavior of accumulation_register is 
 
-signal stored_val : signed(K-1 downto 0);
-constant MAX_VAL : signed(K-1 downto 0) := to_signed((511), K);
+signal stored_val, tmp_sum_sign : signed(K-1 downto 0);
+signal tmp_sum_un : unsigned(K-1 downto 0);
+constant MAX_VAL : unsigned(K-1 downto 0) := to_unsigned((511), K);
 constant MIN_VAL : signed(K-1 downto 0) := to_signed(0, K);
 begin
 
+tmp_sum_un<=unsigned(stored_val+i_val);
+tmp_sum_sign<=stored_val+i_val;
 
 process(clock,rstn)
 
 begin
 
+
 if(rstn='0') then --asynchronous reset
 stored_val<=(others => '0');
 o_val<=(others=>'0');
 elsif(rising_edge(clock) and rstn='1') then
-		if(stored_val+i_val>=MAX_VAL and i_val>to_signed(0,K-2)) then --preventing buffer overflow, if the value stored in the register is already equal to the max value 
+		if(tmp_sum_un>=MAX_VAL and i_val>to_signed(0,K-2)) then --preventing buffer overflow, if the value stored in the register is already equal to the max value 
 			o_val<=std_logic_vector(MAX_VAL);                            -- and the input is bigger than 0, the value should stay at its current value 
-		elsif(stored_val+i_val<=MIN_VAL and i_val<to_signed(0,K-2)) then 
+		elsif(tmp_sum_sign<=MIN_VAL and i_val<to_signed(0,K-2)) then 
 			o_val<=std_logic_vector(MIN_VAL); -- doing the same for the overflow for stored value 0, since we need the accumulator for a dac it wouldn't make sense for the value to be negative
 		else	
 			stored_val<=stored_val+i_val;

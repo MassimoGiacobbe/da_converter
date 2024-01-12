@@ -20,29 +20,29 @@ signal i_int : integer range 0 to 255;
 signal out_dec,out_uni :  integer range 0 to 15;
 
 begin
-i_int<=to_integer(number_in)
+i_int<=to_integer(unsigned(number_in));
 out_uni<= i_int mod 16;
 
-output_det : process(number_in,out_dec,unit)
+output_det : process(i_int,out_dec)
 begin
 
-if(number_in =60) then  out_dec<=0;
-elsif(number_in<=255 AND number_in>=240) then out_dec<=15;
-elsif(number_in<=239 AND number_in>=224) then out_dec<=14;
-elsif(number_in<=223 AND number_in>=208) then out_dec<=13;
-elsif(number_in<=207 AND number_in>=192) then out_dec<=12;
-elsif(number_in<=191 AND number_in>=176) then out_dec<=11;
-elsif(number_in<=175 AND number_in>=160) then out_dec<=10;
-elsif(number_in<=159 AND number_in>=144) then out_dec<=9;
-elsif(number_in<=143 AND number_in>=128) then out_dec<=8;
-elsif(number_in<=127 AND number_in>=112) then out_dec<=7;
-elsif(number_in<=111 AND number_in>=96) then out_dec<=6;
-elsif(number_in<=95 AND number_in>=80) then out_dec<=5;
-elsif(number_in<=79 AND number_in>=64) then out_dec<=4;
-elsif(number_in<=63 AND number_in>=48) then out_dec<=3;
-elsif(number_in<=47 AND number_in>=32) then out_dec<=2;
-elsif(number_in<=31 AND number_in>=16) then out_dec<=1;
-elsif(number_in<15) then out_dec<=0;
+if(i_int =256) then  out_dec<=15;
+elsif(i_int<=255 AND i_int>=240) then out_dec<=15;
+elsif(i_int<=239 AND i_int>=224) then out_dec<=14;
+elsif(i_int<=223 AND i_int>=208) then out_dec<=13;
+elsif(i_int<=207 AND i_int>=192) then out_dec<=12;
+elsif(i_int<=191 AND i_int>=176) then out_dec<=11;
+elsif(i_int<=175 AND i_int>=160) then out_dec<=10;
+elsif(i_int<=159 AND i_int>=144) then out_dec<=9;
+elsif(i_int<=143 AND i_int>=128) then out_dec<=8;
+elsif(i_int<=127 AND i_int>=112) then out_dec<=7;
+elsif(i_int<=111 AND i_int>=96) then out_dec<=6;
+elsif(i_int<=95 AND i_int>=80) then out_dec<=5;
+elsif(i_int<=79 AND i_int>=64) then out_dec<=4;
+elsif(i_int<=63 AND i_int>=48) then out_dec<=3;
+elsif(i_int<=47 AND i_int>=32) then out_dec<=2;
+elsif(i_int<=31 AND i_int>=16) then out_dec<=1;
+elsif(i_int<15) then out_dec<=0;
 else out_dec<=0;
 end if;
 

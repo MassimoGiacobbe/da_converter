@@ -9,9 +9,9 @@ PORT(
 CLOCK_50, RSTn : in std_logic;
 i_data : in  std_logic_vector(N-1 downto 0);
 freq : in std_logic_vector(1 downto 0);
-test_accumulator_o : out std_logic_vector(9 downto 0);
-test_accumulator_i : out signed(7 downto 0);
-test_second_clk : out std_logic;
+--test_accumulator_o : out std_logic_vector(9 downto 0);
+--test_accumulator_i : out signed(7 downto 0);
+--test_second_clk : out std_logic;
 bit_o : buffer std_logic);
 end ppm_converter;
 
@@ -36,9 +36,9 @@ signal accumulator_o : std_logic_vector(N+1 downto 0);
 signal feedback_bit : std_logic_vector(N-1 downto 0);
 signal second_clk : std_logic;
 begin
-test_accumulator_o<=accumulator_o;
-test_accumulator_i<=accumulator_i;
-test_second_clk<=second_clk;
+--test_accumulator_o<=accumulator_o;
+--test_accumulator_i<=accumulator_i;
+--test_second_clk<=second_clk;
 freq_gen : clk_generator PORT MAP(freq,CLOCK_50,RSTn,second_clk);
 
 integ : accumulation_register PORT MAP(accumulator_i,second_clk, RSTn, accumulator_o);

@@ -1,0 +1,9 @@
+	component da_converter is
+		port (
+			clk_clk       : in  std_logic                    := 'X'; -- clk
+			hex0_export   : out std_logic_vector(7 downto 0);        -- export
+			leds_export   : out std_logic_vector(1 downto 0);        -- export
+			reset_reset_n : in  std_logic                    := 'X'  -- reset_n
+		);
+	end component da_converter;
+

@@ -22,8 +22,7 @@ clock_process : process(CLK,RSTn)
 	elsif(rising_edge(CLK) and RSTn='1') then
 			if(clear='1') then
 					OVALUE<=unsigned(INIT_VAL); --synchronous reset
-			end if;
-			if(EN='1') then					
+			elsif(en='1' and clear='0') then					
 					if(UDn='1') then --UDn at 1 means the counter will be counting up
 					OVALUE<=OVALUE+1;
 					elsif(UDn='0') then
