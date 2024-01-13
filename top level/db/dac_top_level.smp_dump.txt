@@ -1,9 +1,0 @@
-
-State Machine - |top_level_dac|da_converter_hd:processore|da_converter_nios2_qsys_0:nios2_qsys_0|da_converter_nios2_qsys_0_nios2_oci:the_da_converter_nios2_qsys_0_nios2_oci|da_converter_nios2_qsys_0_jtag_debug_module_wrapper:the_da_converter_nios2_qsys_0_jtag_debug_module_wrapper|da_converter_nios2_qsys_0_jtag_debug_module_tck:the_da_converter_nios2_qsys_0_jtag_debug_module_tck|DRsize
-Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
-DRsize.000 0 0 0 0 0 0 
-DRsize.001 0 0 0 0 1 1 
-DRsize.010 0 0 0 1 0 1 
-DRsize.011 0 0 1 0 0 1 
-DRsize.100 0 1 0 0 0 1 
-DRsize.101 1 0 0 0 0 1 
