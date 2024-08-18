@@ -1,0 +1,43 @@
+{C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/pwm_converter/clk_generator.vhd} {2 {vcom -work work -2002 -explicit -stats=none {C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/pwm_converter/clk_generator.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity clk_generator
+-- Compiling architecture behavior of clk_generator
+** Warning: (vcom-31) Unable to unlink file "C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/tb_pwm/work/_lock".
+Permission denied. (errno = EACCES)
+
+} {} {}} {C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/pwm_converter/UD_counter.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/pwm_converter/UD_counter.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity UD_counter
+-- Compiling architecture behavior of UD_counter
+
+} {} {}} {C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/pwm_converter/PWM_da_conversion.vhd} {2 {vcom -work work -2002 -explicit -stats=none {C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/pwm_converter/PWM_da_conversion.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+** Warning: (vcom-6) -- Waiting for lock by "maxgi@MSI, pid = 23072
+". Lockfile is "C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/tb_pwm/work/_lock".
+** Warning: (vcom-6) -- Waiting for lock by "maxgi@MSI, pid = 23072
+". Lockfile is "C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/tb_pwm/work/_lock".
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity PWM_da_conversion
+-- Compiling architecture behavior of PWM_da_conversion
+
+} {} {}} {C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/tb_pwm/tb_pwm.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/maxgi/Dropbox (Politecnico Di Torino Studenti)/uni/magistrale/de/lab6/da_converter/da_converter/tb_pwm/tb_pwm.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity tb_pwm
+-- Compiling architecture behavior of tb_pwm
+
+} {} {}}
